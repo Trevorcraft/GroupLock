@@ -1,0 +1,14 @@
+name: GroupLock
+main: net.trevorcraft.grouplock.Plugin
+version: 1.0
+api-version: 1.17
+
+depend:
+  - ChestShop
+
+commands:
+  grouplock:
+    aliases: gl
+    description: Lets multiple people lock chests :)
+    usage: /<command>
+    permission: GroupLock.main

@@ -1,0 +1,11 @@
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  database: YOUR-DATABASE
+  username: YOUR-USERNAME
+  password: YOUR-PASSWORD
+  ssl: false
+
+fees:
+  groupcreation: 1000
+  groupadd: 500

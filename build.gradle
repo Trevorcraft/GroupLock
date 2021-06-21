@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+}
+
+group 'dev.tsarcasm'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'}
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    compileOnly 'net.md-5:bungeecord-api:1.15-SNAPSHOT'
+    compileOnly 'org.spigotmc:spigot-api:1.17-R0.1-SNAPSHOT'
+    compileOnly 'com.github.Trevorcraft:ChestShop-3:37d6c9c055'
+    compileOnly('com.github.MilkBowl:VaultAPI:1.7') {
+        exclude module: 'bukkit'
+    }
+    implementation 'org.apache.commons:commons-dbcp2:2.7.0'
+    implementation 'fr.minuskube.inv:smart-invs:1.2.7'
+}
